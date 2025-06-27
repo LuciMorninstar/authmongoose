@@ -22,7 +22,9 @@ app.use("/api/user",userRoute);
 connectDB();
 
 
-
+app.use("/laptop",(req,res)=>{
+    res.send("Hello");
+})
 
 
 app.listen(9000,()=>{
